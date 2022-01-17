@@ -140,7 +140,7 @@ class _AddresPageState extends State<AddresPage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8)),
                 color: mainColor,
-                child: Text('Continue',
+                child: Text('Sign Up Now',
                     style: GoogleFonts.poppins(
                         color: Colors.black, fontWeight: FontWeight.w500)),
               )),
