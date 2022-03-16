@@ -1,6 +1,8 @@
 part of 'pages.dart';
 
 class MainPage extends StatefulWidget {
+  final int initialPage;
+  MainPage({this.initialPage = 0});
   @override
   _MainPageState createState() => _MainPageState();
 }
@@ -8,6 +10,13 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int selectedPage = 0;
   PageController pageController = PageController(initialPage: 0);
+  @override
+  void initState() {
+    super.initState();
+    selectedPage = widget.initialPage;
+    pageController = PageController(initialPage: widget.initialPage);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,8 +41,8 @@ class _MainPageState extends State<MainPage> {
               Center(
                 child: FoodPage(),
               ),
-              const Center(
-                child: Text("Order"),
+              Center(
+                child: OrderHistoryPage(),
               ),
               const Center(
                 child: Text("Profile"),

@@ -10,7 +10,7 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget build(BuildContext context) {
     TextEditingController emailController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
-    TextEditingController nameController = TextEditingController();
+    // TextEditingController nameController = TextEditingController();
 
     return GeneralPage(
       title: "Sign up",

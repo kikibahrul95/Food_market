@@ -11,6 +11,16 @@ class _AddresPageState extends State<AddresPage> {
     TextEditingController phoneController = TextEditingController();
     TextEditingController addressController = TextEditingController();
     TextEditingController houseNumController = TextEditingController();
+    //   bool isLoading = false;
+    //   List<String> cities;
+    //   String selectedCity;
+
+    //   @override
+    // void initState() {
+    //   super.initState();
+    //   cities = ['Surabaya', 'Bandung', 'Jakarta', 'Semarang'];
+    //   selectedCity = cities[0];
+    // }
 
     return GeneralPage(
       title: "Addres",
