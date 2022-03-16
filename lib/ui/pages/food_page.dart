@@ -40,7 +40,7 @@ class _FoodPageState extends State<FoodPage> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       image: const DecorationImage(
-                          image: const NetworkImage(
+                          image: NetworkImage(
                               "https://th.bing.com/th/id/OIP.DOgJ8rFyO8TtBpP8Awg1bgHaEU?w=325&h=189&c=7&r=0&o=5&pid=1.7"),
                           fit: BoxFit.cover)),
                 )
@@ -48,6 +48,8 @@ class _FoodPageState extends State<FoodPage> {
             )),
 
         ///list of food
+        FoodCard(mockFood)
+
         ///list of food (tabs)
       ],
     );

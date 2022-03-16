@@ -69,7 +69,7 @@ class _SignInPageState extends State<SignInPage> {
               width: double.infinity,
               margin: const EdgeInsets.only(top: 24),
               height: 45,
-              padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+              padding: const EdgeInsets.symmetric(horizontal: defaultMargin),
               child: isLoading
                   ? SpinKitFadingCircle(
                       size: 45,
@@ -90,7 +90,7 @@ class _SignInPageState extends State<SignInPage> {
               width: double.infinity,
               margin: const EdgeInsets.only(top: 24),
               height: 45,
-              padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+              padding: const EdgeInsets.symmetric(horizontal: defaultMargin),
               child: isLoading
                   ? SpinKitFadingCircle(
                       size: 45,
